@@ -7,7 +7,9 @@ Prerequisite:
 - Copy the key and assign it to *FLAGSMITH_API_KEY=<your key>* in your project .env or docker env
 
 Docker steps:
-docker compose up
-docker compose exec app composer install
+```
+  docker-compose up
+  docker-compose exec app composer install
+```
 
 In your Laravel Project, refer to web.php route for examples
