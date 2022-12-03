@@ -15,20 +15,19 @@ abstract class Flagsmith {
         return App::make(FS::class);
     }
 
-    private static function getIdentityFlags(string $identifier = null): Flags {
+    private static function getIdentityFlags(string $identifier): Flags {
         if (!self::$identity_flags) {
            self::$identity_flags = self::conn()->getIdentityFlags($identifier);
         }
-
         return self::$identity_flags;
     }
 
-    public static function isIdentityEnabled(string $feature, string $identifier = null): bool {
+    public static function isIdentityEnabled(string $feature, string $identifier): bool {
         $flags = self::getIdentityFlags($identifier);
         return $flags->isFeatureEnabled($feature);
     }
 
-    public static function getIdentityValue(string $feature, string $identifier = null) {
+    public static function getIdentityValue(string $feature, string $identifier) {
         $flags = self::getIdentityFlags($identifier);
         return $flags->getFeatureValue($feature);
     }
@@ -38,16 +37,15 @@ abstract class Flagsmith {
         if (!self::$flags) {
             self::$flags = self::conn()->getEnvironmentFlags();
         }
-
         return self::$flags;
     }
 
-    public static function isEnabled(string $feature, string $identifier = null): bool {
+    public static function isEnabled(string $feature): bool {
         $flags = self::getFlags($identifier);
         return $flags->isFeatureEnabled($feature);
     }
 
-    public static function getValue(string $feature, string $identifier = null) {
+    public static function getValue(string $feature) {
         $flags = self::getFlags($identifier);
         return $flags->getFeatureValue($feature);
     }
