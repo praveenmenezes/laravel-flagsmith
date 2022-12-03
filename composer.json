@@ -1,0 +1,24 @@
+{
+    "name": "praveenmenezes/laravel-flagsmith",
+    "description": "Flagsmith Wrapper for Laravel 6+",
+    "keywords": ["flagsmith", "laravel"],
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/cache": "^5.4",
+        "flagsmith/flagsmith-php-client": "^3.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Menezes\\LaravelFlagsmith\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Praveen Menezes",
+            "email": "praveen.menezes@kissht.com"
+        }
+    ]
+}
