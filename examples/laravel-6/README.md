@@ -12,4 +12,4 @@ Docker steps:
   docker-compose exec app composer install
 ```
 
-In your Laravel Project, refer to web.php route for examples
+In your Laravel Project, refer to [FlagsmithController](app/Http/Controllers/FlagsmithController.php) for examples
