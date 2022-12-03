@@ -21,6 +21,12 @@ In your Laravel Project, perform the following steps
     * Third party Service Providers
     */
    Menezes\LaravelFlagsmith\Providers\FlagsmithServiceProvider::class,
+],
+
+'alias' => [
+    ...,
+    // Third party aliases
+    'Flagsmith' => Menezes\LaravelFlagsmith\Services\Flagsmith::class,
 ]
 ```
 
