@@ -3,3 +3,4 @@ docker
 package-lock.json
 composer.lock
 .env
+.DS_STORE
