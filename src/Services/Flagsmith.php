@@ -41,12 +41,12 @@ abstract class Flagsmith {
     }
 
     public static function isEnabled(string $feature): bool {
-        $flags = self::getFlags($identifier);
+        $flags = self::getFlags();
         return $flags->isFeatureEnabled($feature);
     }
 
     public static function getValue(string $feature) {
-        $flags = self::getFlags($identifier);
+        $flags = self::getFlags();
         return $flags->getFeatureValue($feature);
     }
 
