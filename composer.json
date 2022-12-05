@@ -8,7 +8,7 @@
         "guzzlehttp/guzzle": "^7.5",
         "symfony/cache": "^5.4",
         "flagsmith/flagsmith-php-client": "^3.1",
-        "laravel/framework": "^6.0.0"
+        "laravel/framework": "^6.0"
     },
     "license": "MIT",
     "autoload": {
@@ -21,5 +21,15 @@
             "name": "Praveen Menezes",
             "email": "praveen23011993@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Menezes\\LaravelFlagsmith\\Providers\\FlagsmithServiceProvider"
+            ],
+            "aliases": {
+                "Flagsmith": "Menezes\\LaravelFlagsmith\\Services\\Flagsmith"
+            }
+        }
+    }
 }

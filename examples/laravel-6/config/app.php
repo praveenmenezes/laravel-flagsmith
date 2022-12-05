@@ -175,9 +175,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        // Third party Service Providers
-        Menezes\LaravelFlagsmith\Providers\FlagsmithServiceProvider::class,
-
     ],
 
     /*
@@ -229,8 +226,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        // Third party aliases
-        'Flagsmith' => Menezes\LaravelFlagsmith\Services\Flagsmith::class,
     ],
 
 ];
