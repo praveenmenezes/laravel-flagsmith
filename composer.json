@@ -8,7 +8,7 @@
         "guzzlehttp/guzzle": "^7.5",
         "symfony/cache": "^5.4",
         "flagsmith/flagsmith-php-client": "^3.1",
-        "laravel/framework": "^6.0.0",
+        "laravel/framework": "^6.0.0"
     },
     "license": "MIT",
     "autoload": {
